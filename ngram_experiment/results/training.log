@@ -1,0 +1,27 @@
+清理 1998-01-2003版-带音.txt: records=19,358, tokens=1,120,542
+清理 1998-02-2003版-带音.txt: records=18,847, tokens=1,153,920
+清理 1998-03-2003版-带音.txt: records=21,497, tokens=1,247,005
+清理 1998-04-2003版-带音.txt: records=21,495, tokens=1,289,928
+清理 1998-05-2003版-带音.txt: records=21,421, tokens=1,247,053
+清理 1998-06-2003版-带音.txt: records=21,143, tokens=1,251,734
+开始训练 n=1
+完成 n=1: types=63,794, training=2.76s, test_ppl=1675.78
+开始训练 n=2
+完成 n=2: types=1,332,509, training=6.79s, test_ppl=380.65
+开始训练 n=3
+完成 n=3: types=4,457,083, training=16.97s, test_ppl=282.35
+开始训练 n=4
+完成 n=4: types=8,539,727, training=27.77s, test_ppl=270.95
+开始训练 n=5
+完成 n=5: types=12,955,114, training=41.05s, test_ppl=268.99
+开始训练 n=6
+完成 n=6: types=17,497,147, training=55.02s, test_ppl=268.76
+开始训练 n=7
+完成 n=7: types=22,097,780, training=69.17s, test_ppl=268.77
+开始训练 n=8
+完成 n=8: types=26,730,351, training=82.71s, test_ppl=268.82
+实验完成
+实验结果: ngram_experiment\results\experiment_results.json
+训练日志: ngram_experiment\results\training.log
+图表目录: ngram_experiment\figures
+清理后语料目录: ngram_experiment\data

@@ -1,0 +1,415 @@
+{
+  "experiment": "人民日报 1998 年上半年 n-gram 语言模型实验",
+  "created_at_local": "2026-10-25 10:49:04",
+  "cleaning": {
+    "monthly": {
+      "01": {
+        "source_lines": 23258,
+        "records_kept": 19358,
+        "record_labels_removed": 19358,
+        "pronunciation_tags_removed": 14409,
+        "angle_tags_removed": 0,
+        "decode_replacement_chars": 0,
+        "corrupt_tokens_replaced_with_unk": 0,
+        "tokens_after_cleaning": 1120542,
+        "source_bytes": 5320005
+      },
+      "02": {
+        "source_lines": 21603,
+        "records_kept": 18847,
+        "record_labels_removed": 18847,
+        "pronunciation_tags_removed": 15387,
+        "angle_tags_removed": 0,
+        "decode_replacement_chars": 0,
+        "corrupt_tokens_replaced_with_unk": 0,
+        "tokens_after_cleaning": 1153920,
+        "source_bytes": 5441098
+      },
+      "03": {
+        "source_lines": 24685,
+        "records_kept": 21497,
+        "record_labels_removed": 21497,
+        "pronunciation_tags_removed": 15067,
+        "angle_tags_removed": 0,
+        "decode_replacement_chars": 1,
+        "corrupt_tokens_replaced_with_unk": 1,
+        "tokens_after_cleaning": 1247005,
+        "source_bytes": 5951910
+      },
+      "04": {
+        "source_lines": 25145,
+        "records_kept": 21495,
+        "record_labels_removed": 21495,
+        "pronunciation_tags_removed": 17195,
+        "angle_tags_removed": 0,
+        "decode_replacement_chars": 2,
+        "corrupt_tokens_replaced_with_unk": 2,
+        "tokens_after_cleaning": 1289928,
+        "source_bytes": 6107764
+      },
+      "05": {
+        "source_lines": 24880,
+        "records_kept": 21421,
+        "record_labels_removed": 21421,
+        "pronunciation_tags_removed": 16866,
+        "angle_tags_removed": 0,
+        "decode_replacement_chars": 3,
+        "corrupt_tokens_replaced_with_unk": 3,
+        "tokens_after_cleaning": 1247053,
+        "source_bytes": 5920187
+      },
+      "06": {
+        "source_lines": 24195,
+        "records_kept": 21143,
+        "record_labels_removed": 21143,
+        "pronunciation_tags_removed": 16163,
+        "angle_tags_removed": 0,
+        "decode_replacement_chars": 0,
+        "corrupt_tokens_replaced_with_unk": 0,
+        "tokens_after_cleaning": 1251734,
+        "source_bytes": 5946378
+      }
+    },
+    "total": {
+      "source_lines": 143766,
+      "records_kept": 123761,
+      "record_labels_removed": 123761,
+      "pronunciation_tags_removed": 95087,
+      "angle_tags_removed": 0,
+      "decode_replacement_chars": 6,
+      "corrupt_tokens_replaced_with_unk": 6,
+      "tokens_after_cleaning": 7310182,
+      "source_bytes": 34687342
+    }
+  },
+  "vocabulary": {
+    "minimum_count": 2,
+    "vocabulary_size_including_specials": 63795,
+    "training_tokens_before_oov_mapping": 4811395,
+    "rare_token_types_mapped_to_unk": 50586,
+    "rare_token_occurrences_mapped_to_unk": 50586,
+    "corrupt_placeholder_occurrences_mapped_to_unk": 3
+  },
+  "split": {
+    "train_months": [
+      "1998-01",
+      "1998-02",
+      "1998-03",
+      "1998-04"
+    ],
+    "validation_months": [
+      "1998-05"
+    ],
+    "test_months": [
+      "1998-06"
+    ]
+  },
+  "validation_oov": {
+    "tokens": 1247053,
+    "oov_tokens": 28370,
+    "oov_rate": 0.022749634538387704
+  },
+  "test_oov": {
+    "tokens": 1251734,
+    "oov_tokens": 28283,
+    "oov_rate": 0.022595056138125194
+  },
+  "prompt": "在阳光明媚的五月，我们学校胜利召开了……",
+  "prompt_tokens": [
+    "在",
+    "阳光",
+    "明媚",
+    "的",
+    "五月",
+    "，",
+    "我们",
+    "学校",
+    "胜利",
+    "召开",
+    "了"
+  ],
+  "order_sweep": [
+    {
+      "n": 1,
+      "unique_ngrams_by_order": {
+        "1": 63794
+      },
+      "model_ngram_types": 63794,
+      "count_seconds": 2.7595347000000174,
+      "training_seconds": 2.759898700000008,
+      "validation": {
+        "perplexity": 1653.8131634157673,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 1675.7803866237568,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      },
+      "generation": [
+        {
+          "temperature": 0.8,
+          "top_k": 20,
+          "continuation": "的 了 为 ， <UNK> 、 、 ， ， 的 在 ， 的 的 和 不 的 ） ， 了 是 ，"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "unique_ngrams_by_order": {
+        "1": 63794,
+        "2": 1268715
+      },
+      "model_ngram_types": 1332509,
+      "count_seconds": 5.6783485999999925,
+      "training_seconds": 6.788718399999993,
+      "validation": {
+        "perplexity": 371.2717268830069,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 380.6494381187994,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      },
+      "generation": [
+        {
+          "temperature": 0.8,
+          "top_k": 20,
+          "continuation": "一 天 不 是 我国 在 新 的 。 ” 。 他 的 ， <UNK> 美元 ， 中国 的 经济 工作 ， 使 企业 要 有 一个 多 名 。"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "unique_ngrams_by_order": {
+        "1": 63794,
+        "2": 1268715,
+        "3": 3124574
+      },
+      "model_ngram_types": 4457083,
+      "count_seconds": 11.406602700000008,
+      "training_seconds": 16.96678989999998,
+      "validation": {
+        "perplexity": 271.25247092228653,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 282.3546876568143,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      },
+      "generation": []
+    },
+    {
+      "n": 4,
+      "unique_ngrams_by_order": {
+        "1": 63794,
+        "2": 1268715,
+        "3": 3124574,
+        "4": 4082644
+      },
+      "model_ngram_types": 8539727,
+      "count_seconds": 14.608425599999975,
+      "training_seconds": 27.77181079999997,
+      "validation": {
+        "perplexity": 258.8939531101496,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 270.9501085754715,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      },
+      "generation": [
+        {
+          "temperature": 0.8,
+          "top_k": 20,
+          "continuation": "。 但 要 看到 它 的 人 ， 都 有 “ <UNK> ” ， 为 维护 稳定 了 ， 而 这 一 点 ， 又 是 一个 ， 但 结果 ， 使 不少 新 的 世纪 ， 制定 了 一 系列 加强 农业 。"
+        },
+        {
+          "temperature": 1.0,
+          "top_k": 1,
+          "continuation": "十五大 精神 ， 坚持 “ 一个 中国 ” 的 政策 ， 在 国际 上 的 地位 和 作用 ， 在 人民 群众 中 的 形象 和 对 国家 、 对 人民 的 利益 ， 也 有利于 世界 的 和平 与 稳定 。"
+        },
+        {
+          "temperature": 1.3,
+          "top_k": 40,
+          "continuation": "全国 ， 而且 在 人员 对 自己 的 <UNK> 。 目前 ， 他们 在 。 然而 ， 美国 的 关系 以及 中国 的 一 只 小 ” 了 ， 也 是 社会主义 革命 发展 的 主要 表现 ： 一 是 要 以 邓小平理论 所 取得 的 。 ” “ 经济 ， 并 在 国家 建设 的 “ ， 但 同时"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "unique_ngrams_by_order": {
+        "1": 63794,
+        "2": 1268715,
+        "3": 3124574,
+        "4": 4082644,
+        "5": 4415387
+      },
+      "model_ngram_types": 12955114,
+      "count_seconds": 19.603619600000002,
+      "training_seconds": 41.0521387,
+      "validation": {
+        "perplexity": 256.7169424017476,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 268.9939850825764,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      },
+      "generation": []
+    },
+    {
+      "n": 6,
+      "unique_ngrams_by_order": {
+        "1": 63794,
+        "2": 1268715,
+        "3": 3124574,
+        "4": 4082644,
+        "5": 4415387,
+        "6": 4542033
+      },
+      "model_ngram_types": 17497147,
+      "count_seconds": 25.277308300000072,
+      "training_seconds": 55.023321200000055,
+      "validation": {
+        "perplexity": 256.4658709178796,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 268.7644167847028,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      },
+      "generation": [
+        {
+          "temperature": 0.8,
+          "top_k": 20,
+          "continuation": "全省 商业 中心 ， 实行 改革 开放 的 基本 原则 ， 即 在 <UNK> 和 一 名 党员 干部 。 同时 ， 在 北京 。"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "unique_ngrams_by_order": {
+        "1": 63794,
+        "2": 1268715,
+        "3": 3124574,
+        "4": 4082644,
+        "5": 4415387,
+        "6": 4542033,
+        "7": 4600633
+      },
+      "model_ngram_types": 22097780,
+      "count_seconds": 31.84355599999992,
+      "training_seconds": 69.17310029999999,
+      "validation": {
+        "perplexity": 256.4791620760416,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 268.7662224342036,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      },
+      "generation": []
+    },
+    {
+      "n": 8,
+      "unique_ngrams_by_order": {
+        "1": 63794,
+        "2": 1268715,
+        "3": 3124574,
+        "4": 4082644,
+        "5": 4415387,
+        "6": 4542033,
+        "7": 4600633,
+        "8": 4632571
+      },
+      "model_ngram_types": 26730351,
+      "count_seconds": 37.77562180000007,
+      "training_seconds": 82.70558420000009,
+      "validation": {
+        "perplexity": 256.52899857889867,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 268.8183910094557,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      },
+      "generation": [
+        {
+          "temperature": 0.8,
+          "top_k": 20,
+          "continuation": "全省 商业 中心 ， 实行 改革 开放 的 基本 实践 中 ， 以 <UNK> ， 我 在 全 市 人民 生活 水平 提高 的 新 的 历史 。 （ 新华社 记者 赵 鹏 认为 ， 从 现在 做 起 ， 从 一个 重要 讲话 ， 强调 人民 政协 通过 多种 形式 的 企业 的 发展 。"
+        }
+      ]
+    }
+  ],
+  "fourgram_comparison": {
+    "jm": {
+      "lambda": 0.2,
+      "validation": {
+        "perplexity": 431.0372700816176,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 450.60898176750965,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      }
+    },
+    "katz": {
+      "validation": {
+        "perplexity": 314.2208778987094,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 899
+      },
+      "test": {
+        "perplexity": 329.2942813064777,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 906
+      }
+    },
+    "mkn": {
+      "validation": {
+        "perplexity": 258.8939531101496,
+        "tokens_scored_including_eos": 1268474,
+        "zero_probability_events": 0
+      },
+      "test": {
+        "perplexity": 270.9501085754715,
+        "tokens_scored_including_eos": 1272877,
+        "zero_probability_events": 0
+      }
+    }
+  },
+  "environment": {
+    "python_requirement": ">=3.10",
+    "matplotlib_requirement": "3.8.4",
+    "orders": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "implementation": "Python packed-integer n-gram counters with modified Kneser–Ney, Jelinek–Mercer and Katz probability calculations"
+  }
+}
